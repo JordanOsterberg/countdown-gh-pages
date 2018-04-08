@@ -1,0 +1,45 @@
+<html>
+
+  <head>
+    <title>Countdown</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheet.css"/>
+  </head>
+
+  <body>
+    <div class="container show-on-large">
+      <div class="row" style="margin-top: 50px;">
+        <div id="img-div" class="col s6 row-div">
+          <img id="img-device" src="images/devices.png">
+        </div>
+        <div class="col s6 row-div" id="content-div">
+            <h1>Countdown</h1>
+            <p>Countdown to the important days in your life.<br>
+Conferences, Birthdays, Vacations. Anything.<br>
+Free on the App Store.</p>
+            <img src="images/appstorebadge.svg">
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function() {
+        var phoneDiv = document.getElementById('img-div');
+        var contentDiv = document.getElementById('content-div');
+
+        if (phoneDiv > contentDiv) {
+          contentDiv.style.height = phoneDiv
+        } else {
+          phoneDiv.style.height = contentDiv
+        }
+      })();
+    </script>
+  </body>
+
+</html>
