@@ -28,6 +28,12 @@ body {
   margin-bottom: 20px;
 }
 
+#badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a p {
   color: blue;
   text-decoration: underline;
