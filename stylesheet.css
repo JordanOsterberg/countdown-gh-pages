@@ -56,30 +56,30 @@ h6 {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 55px;
   }
 
   h6 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   #devices {
-    max-width: 300px;
+    max-width: 400px;
     max-height: auto;
   }
 }
 
 @media only screen and (max-width: 400px) {
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   h6 {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   #devices {
-    max-width: 200px;
+    max-width: 400px;
     max-height: auto;
   }
 }
