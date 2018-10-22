@@ -3,28 +3,118 @@
   <head>
     <title>Countdown</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css"/>
+
     <meta name="og:image" content="http://countdowns.download/images/promo-main-mobile.png" />
   </head>
 
   <body>
-    <div class="container">
-      <h1>Countdown</h1>
-      <div class="description-holder">
-        <h6>Countdown to the important days in your life.<br>
-Conferences, Birthdays, Vacations. Anything.<br>
-Pre-order now on the App Store.</h6>
-      </div>
-      <br>
-      <br>
-      <a href="https://itunes.apple.com/us/app/countdown-countdown-to-dates/id1369638581?ls=1&mt=8"><img id="badge" src="images/preappstorebadge.svg"></img></a>
-      <br>
-      <br>
-      <a href="https://goo.gl/forms/VZAJIvmD3yhOFokz2" target="_blank"><p>Interested in beta testing? Click here.</p></a>
-      <br>
-      <br>
-      <img id="devices" alt="iPhone with Countdown app open, Apple Watch with Countdown complication shown" src="images/devices.png">
+    <div id="topSection">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="topSectionDevices" alt="iPhone with Countdown app open, Apple Watch with Countdown complication shown" src="images/emoji-and-watch.png">
+                </div>
+                <div class="col" id="topSectionText">
+                    <h1>Countdown</h1>
+                    <h4>Everything you love about Countdown just got better. This is version 1.1, available on 11/9/18.</h4>
+                    <img class="topSectionBadge" src="images/appstorebadge.svg">
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="editorSection">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="editorSectionDevice" alt="iPhone with Countdown app open, Apple Watch with Countdown complication shown" src="images/editor.png">
+                </div>
+                <div class="col" id="editorSectionText">
+                    <h1>Visual Editing.</h1>
+                    <h4>View what your Countdown will look like, right from the editor.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="watchThisSection">
+        <div class="container-fluid">
+            <h1>Watch This.</h1>
+            <img id="watchThisSectionDevice" alt="Apple Watches with Countdown" src="images/watch-this-small.png">
+            <h4>Countdown now fully supports Apple Watch Series 4&reg;, adding even more complications and displaying every category right on your wrist.</h4>
+        </div>
+    </div>
+    <div id="emojiSection">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="emojiSectionDevice" alt="X" src="images/emoji.png">
+                </div>
+                <div class="col" id="emojiSectionText">
+                    <h1>Emoji, turned up to 1.1.</h1>
+                    <h4>Searchable. Categorized. Beautiful.<br><br>Emoji in Countdown just got so much better.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="homeSection">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="homeSectionDevice" alt="iPhone with Countdown app open, Apple Watch with Countdown complication shown" src="images/home-light.png">
+                </div>
+                <div class="col" id="homeSectionText">
+                    <h1>Home, sweet home.</h1>
+                    <h4>Countdown now has a bold and beautiful new all-card design for the front page.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottomSection">
+        <div class="container">
+            <h1>Countdown</h1>
+            <h4>Version 1.1, available 11/9/18.</h4>
+
+            <img id="bottomSectionBadge" src="images/appstorebadge.svg">
+
+            <div class="row">
+                <div class="col-sm">
+                    <img class="bottomSectionSideImage" src="images/bottom-emoji.png">
+                </div>
+                <div class="col-sm">
+                    <img id="bottomCenterImage" src="images/bottom-watch-phone.png">
+                </div>
+                <div class="col-sm">
+                    <img class="bottomSectionSideImage" src="images/editor.png">
+                </div>
+            </div>
+
+            <h6>Apple, the Apple logo, iPhone, and Apple Watch are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc. Countdown is Copyright &copy; 2018 Jordan Osterberg.</h6>
+        </div>
+    </div>
+    <div id="betaSection">
+        <div class="container">
+            <h1>Beta Testing</h1>
+            <h4>Help test the future of Countdown.</h4>
+
+            <div class="row">
+                <div class="col">
+                    <img class="betaSectionImage" src="images/home.png">
+                </div>
+            </div>
+
+            <h6>We're always looking for new beta-testors to drive the development of Countdown. If you're interested, you can sign-up <a href="https://testflight.apple.com/join/PNtubmae">here</a>.</h6>
+            <br/>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        $('img').on('dragstart', false);
+    </script>
   </body>
 
 </html>

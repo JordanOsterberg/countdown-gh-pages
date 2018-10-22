@@ -3,100 +3,307 @@
   margin: 0;
 }
 
-body {
-  background: #e5e5e5;
-}
-
-.container {
-  margin: 0 auto;
-  background-color: white;
-  padding: 50px;
-  box-sizing: border-box;
-
-  max-width: 960px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#devices {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  max-height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#badge {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a p {
-  color: blue;
-  text-decoration: underline;
-  text-align: center;
+h1, h4 {
+    font-weight: bold;
 }
 
 h1 {
-  font-size: 60px;
-  text-align: center;
+    font-size: 68px;
 }
 
-h6 {
-  font-size: 18px;
-  font-weight: normal;
+h4 {
+    font-size: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background: white;
-  }
+/* Top Section */
 
-  h1 {
-    font-size: 55px;
-  }
-
-  h6 {
-    font-size: 15px;
-  }
-
-  #devices {
-    max-width: 400px;
-    max-height: auto;
-  }
+#topSection {
+    height: 750px;
 }
 
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 50px;
-  }
-
-  h6 {
-    font-size: 13px;
-  }
-
-  #devices {
-    max-width: 400px;
-    max-height: auto;
-  }
+#topSection .container {
+    margin-top: 15px;
 }
 
-.description-holder {
-  text-align: center;
+#topSectionText {
+    margin-top: 15%;
 }
 
-.video-container {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 560px;
-  max-height: 315px;
+.topSectionBadge {
+    margin-top: 40px;
 }
 
-iframe {
-  width: 100%;
-  height: 100%;
+#topSectionDevices {
+  display: block;
+  max-width: 450px;
+  max-height: auto;
+  object-fit: contain;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Emoji Section */
+
+#emojiSection {
+    background-color: black;
+    height: 900px;
+}
+
+#emojiSectionDevice {
+    display: block;
+    max-height: 700px;
+    max-width: auto;
+    object-fit: contain;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#emojiSectionText {
+    margin-top: 200px;
+    color: white;
+}
+
+#emojiSectionText h4 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Watch This */
+
+#watchThisSection {
+    height: 800px;
+    text-align: center;
+}
+
+#watchThisSection h1 {
+    margin-top: 50px;
+}
+
+#watchThisSection h4 {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#watchThisSectionDevice {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    object-fit: contain;
+    max-height: 400px;
+}
+
+/* Editor */
+
+#editorSection {
+    background-color: black;
+}
+
+#editorSectionDevice {
+    display: block;
+    max-height: 700px;
+    max-width: auto;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#editorSectionText {
+    margin-top: 200px;
+    color: white;
+}
+
+#editorSectionText h4 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Home */
+
+#homeSection {
+    background-color: white;
+}
+
+#homeSectionDevice {
+    display: block;
+    max-height: 700px;
+    max-width: auto;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#homeSectionText {
+    margin-top: 200px;
+    color: black;
+}
+
+#homeSectionText h4 {
+    color: black;
+}
+
+/* Bottom */
+
+#bottomSection {
+    height: 1000px;
+    text-align: center;
+}
+
+#bottomSection h1 {
+    margin-top: 75px;
+}
+
+#bottomSectionBadge {
+    margin-top: 40px;
+}
+
+.bottomSectionSideImage {
+    margin-top: 50px;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+#bottomCenterImage {
+    margin-top: 50px;
+    object-fit: contain;
+    height: 600px;
+}
+
+#bottomSection h6 {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+#betaSection {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#betaSection a {
+    color: white;
+    text-decoration: underline;
+}
+
+#betaSection h1 {
+    padding-top: 50px;
+}
+
+.betaSectionImage {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 30%;
+}
+
+/* // Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #topSectionDevices {
+        width: 300px;
+    }
+
+    #topSection {
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}
+
+/* // Small devices (landscape phones) */
+@media (max-width: 767.98px) {
+    /* Top Section */
+    #topSectionDevices {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    #topSectionText {
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    /* Visual Editing */
+    #editorSectionDevice {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #editorSectionText {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    /* Watch This */
+    #watchThisSectionDevice {
+        width: 60%;
+    }
+
+    #watchThisSection {
+        height: 500px;
+    }
+
+    #watchThisSection h4 {
+        max-width: 90%;
+    }
+
+    /* Emoji */
+    #emojiSection {
+        height: 820px;
+    }
+
+    #emojiSectionDevice {
+        margin-top: 20px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #emojiSectionText {
+        margin-top: 0px;
+    }
+
+    /* Home */
+    #homeSectionDevice {
+        margin-top: 20px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #homeSectionText {
+        margin-top: 0px;
+    }
+
+    .bottomSectionSideImage {
+        display: none;
+    }
+
+    #bottomCenterImage {
+        margin-top: 20px;
+    }
+
+    #bottomSectionBadge {
+        margin-top: 10px;
+    }
+
+    /* Beta */
+    .betaSectionImage {
+        width: 300px;
+    }
 }
