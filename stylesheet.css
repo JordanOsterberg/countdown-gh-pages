@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-h1, h4 {
+h1, h4, h3 {
     font-weight: bold;
 }
 
@@ -16,9 +16,9 @@ h4 {
 }
 
 /* Top Section */
-
 #topSection {
-    height: 750px;
+    /* height: 750px; */
+    /* background-color: red; */
 }
 
 #topSection .container {
@@ -27,6 +27,7 @@ h4 {
 
 #topSectionText {
     margin-top: 15%;
+    margin-right: 40px;
 }
 
 .topSectionBadge {
@@ -35,159 +36,153 @@ h4 {
 
 #topSectionDevices {
   display: block;
-  max-width: 450px;
+  max-width: 330px;
   max-height: auto;
+  margin-left: 75px;
   object-fit: contain;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-/* Emoji Section */
+/* Readily Available */
 
-#emojiSection {
+#readily-available {
+    text-align: center;
+    margin-top: 30px;
     background-color: black;
-    height: 900px;
-}
-
-#emojiSectionDevice {
-    display: block;
-    max-height: 700px;
-    max-width: auto;
-    object-fit: contain;
-    margin-top: 70px;
-    margin-bottom: 20px;
-}
-
-#emojiSectionText {
-    margin-top: 200px;
     color: white;
 }
 
-#emojiSectionText h4 {
-    color: rgba(255, 255, 255, 0.5);
+#readily-available-title {
+    padding-top: 25px;
 }
 
-/* Watch This */
+#readily-available-image {
+    max-height: 700px;
+    max-width: auto;
+}
 
-#watchThisSection {
-    height: 800px;
+/* Light and Dark */
+
+#light-dark {
     text-align: center;
 }
 
-#watchThisSection h1 {
-    margin-top: 50px;
+#light-dark-title {
+    padding-top: 25px;
 }
 
-#watchThisSection h4 {
-    max-width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#light-dark-image {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    max-width: 80%;
+    max-height: auto;
 }
 
-#watchThisSectionDevice {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Designed for Mac */
 
-    margin-top: 70px;
-    margin-bottom: 70px;
-    object-fit: contain;
-    max-height: 400px;
-}
-
-/* Editor */
-
-#editorSection {
+#designed-for-mac {
+    text-align: center;
+    color: white;
     background-color: black;
 }
 
-#editorSectionDevice {
-    display: block;
-    max-height: 700px;
-    max-width: auto;
-    object-fit: contain;
-    margin-top: 30px;
-    margin-bottom: 20px;
+#designed-for-mac-title {
+    padding-top: 25px;
 }
 
-#editorSectionText {
-    margin-top: 200px;
-    color: white;
+#designed-for-mac-image {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    max-width: 80%;
+    max-height: auto;
 }
 
-#editorSectionText h4 {
-    color: rgba(255, 255, 255, 0.5);
-}
+/* In Sync */
 
-/* Home */
-
-#homeSection {
-    background-color: white;
-}
-
-#homeSectionDevice {
-    display: block;
-    max-height: 700px;
-    max-width: auto;
-    object-fit: contain;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-#homeSectionText {
-    margin-top: 200px;
-    color: black;
-}
-
-#homeSectionText h4 {
-    color: black;
-}
-
-/* Bottom */
-
-#bottomSection {
-    height: 1000px;
+#in-sync {
     text-align: center;
 }
 
-#bottomSection h1 {
-    margin-top: 75px;
+#in-sync-title {
+    padding-top: 25px;
 }
 
-#bottomSectionBadge {
+#in-sync-image {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    max-width: 80%;
+    max-height: auto;
+}
+
+#in-sync-phone, #in-sync-ipad {
+    display: none;
+}
+
+/* Recap */
+
+#recap {
+    text-align: center;
+}
+
+#recap h1 {
+    margin-top: 25px;
+}
+
+#recapBadge {
     margin-top: 40px;
 }
 
-.bottomSectionSideImage {
+.recap-image {
     margin-top: 50px;
-    max-width: 80%;
+    margin-right: 75px;
+    max-width: 90%;
     object-fit: contain;
 }
 
-#bottomCenterImage {
-    margin-top: 50px;
-    object-fit: contain;
-    height: 600px;
+.recap-image-mobile-phone, .recap-image-mobile-mac {
+    display: none;
 }
 
-#bottomSection h6 {
-    margin-top: 50px;
+#recap h6 {
+    margin-top: 35px;
+    margin-bottom: 25px;
     font-weight: bold;
 }
 
-#betaSection {
-    text-align: center;
+/* Previous Update */
+#previousUpdate {
     background-color: black;
     color: white;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
-#betaSection a {
-    color: white;
+#previousUpdateDevices {
+    width: 75%;
+}
+
+#previousUpdateText {
+    margin-top: 125px;
+    margin-right: 40px;
+}
+
+#previousUpdateMobile {
+    display: none;
+}
+
+/* Beta */
+
+#beta {
+    text-align: center;
+}
+
+#beta a {
     text-decoration: underline;
+    color: black;
 }
 
-#betaSection h1 {
+#beta h1 {
     padding-top: 50px;
 }
 
@@ -197,114 +192,187 @@ h4 {
     width: 30%;
 }
 
-/* // Medium devices (tablets) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #topSectionDevices {
-        width: 300px;
+@media (min-width: 1201px) {
+    #previousUpdateText {
+        margin-top: 15%;
     }
+}
 
-    #topSection {
-        height: 500px;
-    }
-
-    h1 {
-        font-size: 45px;
-    }
-
-    h4 {
-        font-size: 24px;
+@media (max-width: 1200px) {
+    #previousUpdateText h1 {
+        font-size: 55px
     }
 }
 
 /* // Small devices (landscape phones) */
-@media (max-width: 767.98px) {
-    /* Top Section */
-    #topSectionDevices {
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
-    }
-
-    #topSectionText {
-        margin-top: 0px;
-    }
-
+@media (max-width: 500px) {
     h1 {
-        font-size: 36px;
+        font-size: 50px;
     }
 
-    h4 {
-        font-size: 16px;
+    #topSectionDevices {
+        height: 80%;
+        margin-left: 55px;
     }
 
-    /* Visual Editing */
-    #editorSectionDevice {
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+    #topSectionText h1 {
+        margin-top: -130px;
     }
 
-    #editorSectionText {
-        margin-top: 0px;
-        margin-bottom: 25px;
+    #topSectionText h4 {
+        font-size: 20px;
     }
 
-    /* Watch This */
-    #watchThisSectionDevice {
-        width: 60%;
-    }
-
-    #watchThisSection {
-        height: 500px;
-    }
-
-    #watchThisSection h4 {
-        max-width: 90%;
-    }
-
-    /* Emoji */
-    #emojiSection {
-        height: 820px;
-    }
-
-    #emojiSectionDevice {
+    .topSectionBadge {
         margin-top: 20px;
-        width: 300px;
+        margin-bottom: 10px;
+        max-width: 53%;
+    }
+
+    /* Readily Available */
+    #readily-available-title {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    #readily-available-image {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #emojiSectionText {
-        margin-top: 0px;
+    #readily-available h3 {
+        font-size: 20px;
     }
 
-    /* Home */
-    #homeSectionDevice {
-        margin-top: 20px;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+    /* Light & Dark */
+
+    #light-dark-title {
+        font-size: 45px;
     }
 
-    #homeSectionText {
-        margin-top: 0px;
+    #light-dark-image {
+        max-width: 100%;
     }
 
-    .bottomSectionSideImage {
+    #light-dark h3 {
+        font-size: 20px;
+    }
+
+    /* Designed for Mac */
+
+    #designed-for-mac-title {
+        font-size: 40px;
+    }
+
+    #designed-for-mac-image {
+        max-width: 100%;
+    }
+
+    #designed-for-mac h3 {
+        font-size: 20px;
+    }
+
+    /* In Sync */
+    #in-sync-title {
+        font-size: 45px;
+    }
+
+    #in-sync h3 {
+        font-size: 20px;
+    }
+
+    #in-sync-image {
         display: none;
     }
 
-    #bottomCenterImage {
-        margin-top: 20px;
-        width: 300px;
+    #in-sync-phone, #in-sync-ipad {
+        display: block;
     }
 
-    #bottomSectionBadge {
-        margin-top: 10px;
+    #in-sync-phone {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+
+    #in-sync-ipad {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    /* Recap */
+    #recap h1 {
+        font-size: 50px;
+    }
+
+    #recap h4 {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    .recap-image {
+        display: none;
+    }
+
+    #recapBadge {
+        margin-top: 15px;
+        max-width: 54%;
+        max-height: auto;
+        margin-bottom: 10px;
+    }
+
+    .recap-image-mobile-phone, .recap-image-mobile-mac {
+        display: block;
+    }
+
+    .recap-image-mobile-phone {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+
+    .recap-image-mobile-mac {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+
+    /* Previous Update */
+    #previousUpdateDesktop {
+        display: none;
+    }
+
+    #previousUpdateMobile {
+        display: block;
+    }
+
+    #previousUpdateMobile img {
+        width: 80%;
+        margin-left: 35px;
+    }
+
+    #previousUpdateMobile h1 {
+        margin-top: 35px;
+        font-size: 40px;
+    }
+
+    #previousUpdateMobile h4 {
+        font-size: 20px;
+    }
+
+    #previousUpdateMobile a {
+        font-size: 20px;
     }
 
     /* Beta */
     .betaSectionImage {
-        width: 300px;
+        width: 80%;
     }
 }
