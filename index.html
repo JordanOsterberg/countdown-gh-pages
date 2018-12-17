@@ -20,8 +20,8 @@
                 <div class="col" id="topSectionText">
                     <h1>Countdown</h1>
                     <h4>Ready, wherever you are. Version 1.2, available <span class="release"></span> for iOS, watchOS, and macOS.</h4>
-                    <a href="https://itunes.apple.com/us/app/countdown-countdown-to-dates/id1369638581?ls=1&mt=8"><img class="topSectionBadge" src="images/appstorebadge.svg"></a>
-                    <a href="https://itunes.apple.com/us/app/countdown-countdown-to-dates/id1369638581?ls=1&mt=8"><img class="topSectionBadge" src="images/macappstorebadge.svg"></a>
+                    <a href="https://itunes.apple.com/us/app/countdown-countdown-to-dates/id1369638581"><img class="topSectionBadge" src="images/appstorebadge.svg"></a>
+                    <a href="https://itunes.apple.com/us/app/countdown/id1443683584"><img class="topSectionBadge mac-badge" src="images/premacappstorebadge.svg"></a>
                 </div>
             </div>
         </div>
@@ -79,8 +79,8 @@
             <h1>Countdown</h1>
             <h4>Version 1.2, available <span class="release"></span>.</h4>
 
-            <a href="https://itunes.apple.com/us/app/countdown-countdown-to-dates/id1369638581?ls=1&mt=8"><img id="recapBadge" src="images/appstorebadge.svg"></a>
-            <a href="https://itunes.apple.com/us/app/countdown-countdown-to-dates/id1369638581?ls=1&mt=8"><img id="recapBadge" src="images/macappstorebadge.svg"></a>
+            <a href="https://itunes.apple.com/us/app/countdown-countdown-to-dates/id1369638581"><img id="recapBadge" src="images/appstorebadge.svg"></a>
+            <a class="mac-link" href="https://itunes.apple.com/us/app/countdown/id1443683584"><img id="recapBadge" class="mac-badge" src="images/premacappstorebadge.svg"></a>
 
             <img class="recap-image" src="images/1.2/recap-images.png">
             <img class="recap-image-mobile-phone" src="images/1.2/in-sync-phone.png" />
@@ -136,9 +136,11 @@
         today.setHours(0,0,0,0);
 
         if (today < release) {
-            $('.release').html("in late 2018");
+            $('.release').html("on December 21st, 2018");
+            $('.mac-badge').attr("src", "./images/premacappstorebadge.svg");
         } else {
             $('.release').html("now");
+            $('.mac-badge').attr("src", "./images/macappstorebadge.svg");
         }
 
         $('.year').html(today.getFullYear());
