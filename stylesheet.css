@@ -81,6 +81,13 @@ h4 {
 
 /* Designed for Mac */
 
+#designed-for-mac-image {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    max-width: 80%;
+    max-height: auto;
+}
+
 #designed-for-mac {
     text-align: center;
     color: white;
@@ -91,11 +98,44 @@ h4 {
     padding-top: 25px;
 }
 
-#designed-for-mac-image {
+/* Fully Packed */
+
+#fully-packed-image {
     margin-top: 25px;
-    margin-bottom: 35px;
-    max-width: 80%;
-    max-height: auto;
+    margin-bottom: 45px;
+    display: block;
+    max-width: auto;
+    max-height: 500px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fully-packed {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+#fully-packed-title {
+    padding-top: 25px;
+}
+
+#fully-packed .container .row {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+}
+
+#fully-packed .container .row .col-sm ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#fully-packed .container .row .col-sm ul li h5 span {
+    margin-left: 5px;
 }
 
 /* In Sync */
@@ -303,6 +343,10 @@ h4 {
         margin-right: auto;
         margin-top: 25px;
         margin-bottom: 25px;
+    }
+
+    #fully-packed .container .row {
+        margin-left: -25px;
     }
 
     /* Recap */
